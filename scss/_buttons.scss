@@ -1,0 +1,26 @@
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.btn {
+  &-blue {
+    @extend %btn-shared;
+    color: white;
+    background-color: blue;
+  }
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background-color: #333;
+  color: #999;
+}

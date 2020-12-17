@@ -1,0 +1,39 @@
+.row {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+@mixin media($max) {
+  @media (max-width: $max) {
+    @content;
+  }
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    grid-column: span $i;
+
+    padding: 20px 15px;
+    // color: white;
+  }
+  // .col-#{$i}::after {
+  //   content: "Desktop #{$i}";
+  // }
+}
+
+@mixin center-x-y($height, $width) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $width;
+  height: $height;
+
+  margin: 0 auto;
+  // left: 0;
+  // right: 0;
+
+  /** Position should be absolute */
+  // position: absolute;
+}

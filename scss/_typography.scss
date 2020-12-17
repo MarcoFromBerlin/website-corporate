@@ -1,0 +1,19 @@
+h3 {
+  font-size: 2rem;
+}
+
+// align
+.t-center-x {
+  text-align: center;
+}
+
+// ICONS
+.icons-social {
+  // padding: 10px;
+  font-size: 30px;
+  i:hover {
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s;
+  }
+}

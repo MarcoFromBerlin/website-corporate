@@ -1,0 +1,15 @@
+.menu {
+  & ul {
+    display: flex;
+    float: $menu-position;
+
+    & li {
+      list-style-type: none;
+      margin-right: 20px;
+      & a {
+        color: $menu-font-color;
+        text-decoration: none;
+      }
+    }
+  }
+}

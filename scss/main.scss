@@ -1,0 +1,166 @@
+// base
+@import "base/root";
+@import "base/reset";
+@import "base/typography";
+
+@import "functions";
+
+@import "utilities";
+
+@import "variables";
+@import "media";
+@import "menu";
+@import "buttons";
+@import "typography";
+
+#home-a {
+  height: 100vh;
+  max-height: $page-max-height;
+  background-color: $bg-color-first-page;
+
+  #header {
+    height: 10vh;
+  }
+
+  .home-a-img img {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    right: 30px;
+
+    // background: url("../images/clean-ipad-screen-mockup-desktop.png") no-repeat
+    //   center center/cover;
+  }
+
+  .hero {
+    // max-width: 10%;
+    // @include center-x-y(90vh, 80vw);
+  }
+  .hero-title p {
+    font-size: 3rem;
+  }
+
+  .logo img {
+    width: 30px;
+  }
+}
+
+#home-b {
+  // height: 100vh;
+  max-height: $page-max-height;
+  .img-smartphone img {
+    width: 130%;
+  }
+
+  .description-app-test {
+    & h1 {
+      font-size: 3rem;
+    }
+    & p {
+      font-size: 1.4rem;
+      font-weight: $thin;
+    }
+    & button {
+      @include center-x-y(70px, 100%);
+      text-transform: capitalize;
+      font-size: 1.2rem;
+      & i {
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+#home-c {
+  // height: 40vh;
+  max-height: 400px;
+  margin-bottom: 5rem;
+  .items > div {
+    @include center-x-y(100%, 100%);
+
+    & p {
+      font-size: 1.3rem;
+      font-weight: $thin;
+    }
+    & img {
+      @include center-x-y(100%, 90%);
+    }
+  }
+}
+
+#footer {
+  // height: 10vh;
+
+  background-color: $bg-color-first-page;
+
+  @include center-x-y(100%, 100%);
+
+  & p {
+    font-size: 1.1rem;
+    font-weight: $thin;
+  }
+}
+
+@include media($tablet) {
+  :root {
+    background-color: purple;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat($columns-tablet, 1fr);
+    gap: 1rem;
+    margin-bottom: 20px;
+  }
+
+  @for $i from 1 through $columns-tablet {
+    .col-m-#{$i} {
+      grid-column: span $i;
+      padding: 20px 15px;
+      color: white;
+      background-color: orange;
+    }
+    .col-m-#{$i}::after {
+      content: "Tablet #{$i}";
+    }
+  }
+  .hide-tablet {
+    visibility: hidden;
+  }
+}
+
+@include media($phone) {
+  :root {
+    background-color: dodgerblue;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat($columns-phone, 1fr);
+    gap: 1rem;
+    margin-bottom: 20px;
+  }
+
+  @for $i from 1 through $columns-phone {
+    .col-lg-#{$i} {
+      grid-column: span $i;
+      padding: 20px 15px;
+      color: white;
+      background-color: gray;
+    }
+    .col-lg-#{$i}::after {
+      content: "Phone #{$i}";
+    }
+  }
+
+  .hide {
+    visibility: visible;
+  }
+
+  .hide-tablet {
+    visibility: hidden;
+  }
+  .hide-phone {
+    visibility: hidden;
+  }
+}
