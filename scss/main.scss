@@ -6,6 +6,9 @@
 @import "functions";
 
 @import "utilities";
+// PAGES
+
+@import "sections/footer";
 
 @import "variables/colors";
 @import "variables/variables";
@@ -90,19 +93,6 @@
     & img {
       @include center-x-y(100%, 90%);
     }
-  }
-}
-
-#footer {
-  // height: 10vh;
-
-  background-color: $bg-color-first-page;
-
-  @include center-x-y(100%, 100%);
-
-  & p {
-    font-size: 1.1rem;
-    font-weight: $thin;
   }
 }
 
