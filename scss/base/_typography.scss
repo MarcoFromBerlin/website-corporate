@@ -11,8 +11,33 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
 h3 {
   font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+h5 {
+  font-size: 1rem;
+}
+
+// TONES
+.text-grey {
+  color: grey;
+}
+
+// WEIGHTS
+.text-thin {
+  font-weight: $thin;
 }
 
 // align
@@ -29,4 +54,10 @@ h3 {
     color: white;
     transition: all 0.3s;
   }
+}
+
+// SPLEACILS
+
+.form-title {
+  width: 400px;
 }

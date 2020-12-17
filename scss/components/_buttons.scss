@@ -11,16 +11,47 @@
 }
 
 .btn {
-  &-blue {
+  &-light-blue {
     @extend %btn-shared;
-    color: white;
-    background-color: blue;
+    color: $light-blue-text;
+    background-color: $light-blue;
+    text-transform: capitalize;
+    // &:hover {
+    //   background-color: blue;
+    //   color: white;
+    // }
+  }
+}
+.btn {
+  &-outline-light-blue {
+    @extend %btn-shared;
+    color: $outline-light-blue-text;
+    background-color: $outline-light-blue;
+    border: $outline-light-blue 6 solid;
+    text-transform: capitalize;
+    // &:hover {
+    //   background-color: blue;
+    //   color: white;
+    // }
+  }
+}
+.btn {
+  &-yellow {
+    @extend %btn-shared;
+    color: $yellow-text;
+    background-color: $yellow;
+
+    text-transform: uppercase;
+
+    & :hover {
+      background-color: red;
+    }
   }
 }
 
-button[class^="btn-"]:hover,
-a[class^="btn-"]:hover,
-input[class^="btn-"]:hover {
-  background-color: #333;
-  color: #999;
-}
+// button[class^="btn-"]:hover,
+// a[class^="btn-"]:hover,
+// input[class^="btn-"]:hover {
+//   background-color: blue;
+//   color: white;
+// }

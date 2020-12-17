@@ -7,10 +7,14 @@
 
 @import "utilities";
 
-@import "variables";
+@import "variables/colors";
+@import "variables/variables";
+@import "variables/aligns";
 @import "media";
+// COMPONENTS
 @import "components/menu";
 @import "components/buttons";
+@import "components/forms";
 
 #home-a {
   height: 100vh;
