@@ -1,0 +1,11 @@
+.icons-social i {
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  float: $menu-position;
+  &:hover {
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s;
+  }
+}
