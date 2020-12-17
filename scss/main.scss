@@ -9,7 +9,9 @@
 // PAGES
 
 @import "sections/home_a";
+@import "sections/home_b";
 @import "sections/home_c";
+@import "sections/home_d";
 @import "sections/footer";
 
 @import "variables/colors";
@@ -54,49 +56,6 @@
 //     width: 30px;
 //   }
 // }
-
-#home-b {
-  // height: 100vh;
-  max-height: $page-max-height;
-  .img-smartphone img {
-    width: 130%;
-  }
-
-  .description-app-test {
-    & h1 {
-      font-size: 3rem;
-    }
-    & p {
-      font-size: 1.4rem;
-      font-weight: $thin;
-    }
-    & button {
-      @include center-x-y(70px, 100%);
-      text-transform: capitalize;
-      font-size: 1.2rem;
-      & i {
-        padding-right: 20px;
-      }
-    }
-  }
-}
-
-#home-c {
-  // height: 40vh;
-  max-height: 400px;
-  margin-bottom: 5rem;
-  .items > div {
-    @include center-x-y(100%, 100%);
-
-    & p {
-      font-size: 1.3rem;
-      font-weight: $thin;
-    }
-    & img {
-      @include center-x-y(100%, 90%);
-    }
-  }
-}
 
 @include media($tablet) {
   :root {

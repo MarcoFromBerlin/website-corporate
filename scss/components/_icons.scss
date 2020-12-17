@@ -1,11 +1,66 @@
-.icons-social i {
+// .icons-social i {
+//   padding: 10px;
+//   font-size: 20px;
+//   display: flex;
+//   float: $menu-position;
+//   &:hover {
+//     cursor: pointer;
+//     color: white;
+//     transition: all 0.3s;
+//   }
+// }
+.icons-social {
   padding: 10px;
   font-size: 20px;
   display: flex;
   float: $menu-position;
-  &:hover {
-    cursor: pointer;
-    color: white;
-    transition: all 0.3s;
+
+  & ul {
+    display: flex;
+    float: $menu-position;
+
+    & :hover {
+      cursor: pointer;
+      color: white;
+      transition: all 0.3s;
+    }
   }
 }
+
+.icons-social-team {
+  // padding: 10px;
+  font-size: 20px;
+  // display: flex;
+  // float: $menu-position;
+
+  & ul {
+    // float: $menu-position;
+
+    display: flex;
+
+    & a {
+      left: 0;
+      & i {
+        padding-right: 10px;
+
+        & :hover {
+          cursor: pointer;
+          color: blue;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+}
+
+// .icons-social i {
+//   padding: 10px;
+//   font-size: 20px;
+//   display: flex;
+//   float: $menu-position;
+//   &:hover {
+//     cursor: pointer;
+//     color: white;
+//     transition: all 0.3s;
+//   }
+// }

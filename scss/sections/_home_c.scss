@@ -1,4 +1,19 @@
 #home-c {
+  // height: 40vh;
+  max-height: 400px;
+  margin-bottom: 5rem;
+  .items > div {
+    @include center-x-y(100%, 100%);
+
+    & p {
+      font-size: 1.3rem;
+      font-weight: $thin;
+    }
+    & img {
+      @include center-x-y(100%, 90%);
+    }
+  }
+
   & .stars {
     width: 150px;
   }
