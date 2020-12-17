@@ -8,6 +8,7 @@
 @import "utilities";
 // PAGES
 
+@import "sections/home_a";
 @import "sections/footer";
 
 @import "variables/colors";
@@ -21,37 +22,37 @@
 @import "components/icons";
 @import "components/decorations";
 
-#home-a {
-  height: 100vh;
-  max-height: $page-max-height;
-  background-color: $bg-color-first-page;
+// #home-a {
+//   height: 100vh;
+//   max-height: $page-max-height;
+//   background-color: $bg-color-first-page;
 
-  #header {
-    height: 10vh;
-  }
+//   #header {
+//     height: 10vh;
+//   }
 
-  .home-a-img img {
-    position: relative;
-    width: 600px;
-    height: 400px;
-    right: 30px;
+//   .home-a-img img {
+//     position: relative;
+//     width: 600px;
+//     height: 400px;
+//     right: 30px;
 
-    // background: url("../images/clean-ipad-screen-mockup-desktop.png") no-repeat
-    //   center center/cover;
-  }
+//     // background: url("../images/clean-ipad-screen-mockup-desktop.png") no-repeat
+//     //   center center/cover;
+//   }
 
-  .hero {
-    // max-width: 10%;
-    // @include center-x-y(90vh, 80vw);
-  }
-  .hero-title p {
-    font-size: 3rem;
-  }
+//   .hero {
+//     // max-width: 10%;
+//     // @include center-x-y(90vh, 80vw);
+//   }
+//   .hero-title p {
+//     font-size: 3rem;
+//   }
 
-  .logo img {
-    width: 30px;
-  }
-}
+//   .logo img {
+//     width: 30px;
+//   }
+// }
 
 #home-b {
   // height: 100vh;

@@ -5,3 +5,35 @@
 .full-width {
   width: 100%;
 }
+
+// centering
+
+.center-x {
+  left: 0;
+  right: 0;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  position: absolute;
+  width: 90%;
+}
+
+.center-x-y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+}
+
+// TEXT ALIGNS
+
+// align
+.t-center-x {
+  text-align: center;
+}
+.t-center-y {
+  display: flex;
+  align-items: center;
+}

@@ -18,27 +18,6 @@
   visibility: hidden;
 }
 
-// centering
-
-.center-x {
-  left: 0;
-  right: 0;
-
-  margin-left: auto;
-  margin-right: auto;
-
-  position: absolute;
-  width: 90%;
-}
-
-.center-x-y {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 90vh;
-}
-
 .items-w-100 {
   width: 100%;
 }

@@ -1,0 +1,25 @@
+@import "../variables/colors";
+
+.skill {
+  background-color: #d9edff;
+  height: 350px !important;
+
+  .row {
+    margin-top: -20px;
+  }
+
+  img {
+    width: 60px;
+  }
+
+  & h5 {
+    font-size: 0.9rem;
+  }
+  & .skill-contents {
+    background-color: white;
+    border: $outline-light-blue 1px solid;
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+
+    margin-top: -30px;
+  }
+}
